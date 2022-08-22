@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.Master.cs" Inherits="Zadatak.MainMaster" %>
+
+<!DOCTYPE html>
+
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <link href="Content/Moj.css" rel="stylesheet" />
+    <link href="Content/Person.css" rel="stylesheet" />
+    <link href="Content/toastr.css" rel="stylesheet" />
+    <script src="Scripts/toastr.js"></script>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+
+    <div class="container mainContainer">
+
+       <header>
+          <div class="row">
+
+              <div class="col-lg-6 col-md-6 col-sm-6 text-left">
+                  <span class="title"><%: Page.Title %></span>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-6 text-right" style="padding-top:5px;">
+                  <asp:Button ID="btnUser" runat="server" CssClass="btn btn-success"  CausesValidation="False" meta:resourcekey="btnUserResource1"/>
+                  <asp:Button Text="Logout" ID="btnLogout" runat="server" OnClick="btnLogout_Click"  CssClass="btn btn-warning" CausesValidation="False" meta:resourcekey="btnLogoutResource1"/>
+
+              </div>
+            </div>
+
+              <hr style="margin-top:3px;"/>
+
+             <nav>
+                 <ul>
+                     <li>
+                         <asp:LinkButton ID="lb1" PostBackUrl="~/AddNewPerson.aspx" runat="server" Style="width: 160px" class="btn btn-default" CausesValidation="False" meta:resourcekey="lb1Resource1"><span class="glyphicon glyphicon-floppy-save" style="padding-right: 5px;"></span>Add new person</asp:LinkButton>
+                     </li>
+                     <li>
+                         <asp:LinkButton ID="lb2" PostBackUrl="~/EditData.aspx" runat="server" Style="width: 160px" class="btn btn-default" CausesValidation="False" meta:resourcekey="lb2Resource1" ><span class="glyphicon glyphicon-share" style="padding-right: 5px;"></span>Edit data</asp:LinkButton>
+                     </li>
+                     <li>
+                         <asp:LinkButton ID="lb3" PostBackUrl="~/PersonList.aspx" runat="server" Style="width: 160px" class="btn btn-default" CausesValidation="False" meta:resourcekey="lb3Resource1"><span class="glyphicon glyphicon-list" style="padding-right: 5px;"></span>Person list</asp:LinkButton>
+                     </li>
+                     <li>
+                         <asp:LinkButton ID="lb4" PostBackUrl="~/Setup.aspx" runat="server" Style="width: 160px" class="btn btn-default" CausesValidation="False" meta:resourcekey="lb4Resource1" ><span class="glyphicon glyphicon-cog" style="padding-right: 5px;"></span>Setup</asp:LinkButton>
+                     </li>
+                 </ul>
+             </nav>
+              <hr />
+       </header>
+
+        <section>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </section>
+            
+        <hr />
+            <footer>
+                <div>
+                <p>
+                    <%: DateTime.Now %> | RWA - <span style="color:red;">WebForms</span> -  
+                    <asp:Label Text="Project" runat="server" ID="lblProject"
+                        meta:resourcekey="lblProjectResource1" />
+                </p>
+
+                <p class="textInfo">
+                    <asp:Label Text="Repository" runat="server" ID="lblRepo"
+                        meta:resourcekey="lblRepoResource1" /> -
+                    <asp:Label Text="Database" runat="server" ID="lblRepo2"
+                        meta:resourcekey="lblRepo2Resource1" /> 
+                </p>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

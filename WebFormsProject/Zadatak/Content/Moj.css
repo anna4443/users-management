@@ -1,0 +1,138 @@
+﻿body {
+    font-family: 'Segoe UI';
+    background-color: #efefef;
+}
+
+h1 {
+    font-weight: 100;
+    text-align: center;
+}
+
+.title {
+    color: black;
+    display: block;
+    font-size: 2em;
+    font-weight: 100;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 10px;
+}
+
+nav ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 5px 20px;
+}
+
+.mainContainer {
+    margin: 30px auto 0;
+    border: 0px solid #ccc;
+    overflow: hidden;
+    background-color: white;
+    padding: 10px;
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.formContainer {
+    margin: auto;
+    padding: 20px;
+}
+
+.validators{
+    color:red;
+    font-weight:bold;
+}
+
+.validationSummary {
+    text-align: left;
+    color: red;
+    margin-top: 30px;
+    font-weight: normal;
+}
+
+.textInfo {
+    background-color: gray;
+    color: white;
+    width:max-content;
+    margin: auto;
+    padding: 2px 8px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+}
+
+.tblPrikazOsoba {
+    margin: auto;
+    width: 100%;
+}
+
+    .tblPrikazOsoba td:last-of-type {
+        vertical-align: top;
+    }
+
+    .tblPrikazOsoba tr:not(:first-child) {
+        height: 80px;
+    }
+
+    .tblPrikazOsoba tr:not(:first-of-type) td:first-child {
+        font-weight: normal;
+    }
+
+    .tblPrikazOsoba ul {
+        padding: 0;
+    }
+
+        .tblPrikazOsoba ul li {
+            list-style: none;
+        }
+
+.urediOsobu {
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+#MainContent_mojGV {
+    /*font-size:.8em;*/
+    width: 100%;
+}
+
+    #MainContent_mojGV input,
+    #MainContent_mojGV select {
+        /*width: 120px;*/
+        padding: 3px;
+        border: 1px solid #ccc;
+    }
+
+    #MainContent_mojGV tr:first-child {
+        height: 30px;
+    }
+
+    #MainContent_mojGV tr:not(:first-child) td:first-child {
+        font-weight: normal;
+    }
+
+tr > th {
+    background-color: #333;
+    color: white;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+th {
+    padding: 5px;
+}

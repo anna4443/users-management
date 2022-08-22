@@ -1,0 +1,23 @@
+﻿body {
+}
+
+td {
+    padding: 5px;
+}
+
+    td:first-child {
+        font-weight: bold;
+    }
+
+.osoba {
+    border: 1px solid #dedede;
+    width: 310px;
+    padding: 10px;
+    float: left;
+    margin: 10px;
+}
+
+.osoba table > tr > td + td + td{
+    width: 20px;
+
+}
